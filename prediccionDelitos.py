@@ -44,7 +44,7 @@ def load_models():
   codGenero=jb.load('codGenero.bin')
   codDia=jb.load('codDia.bin')
   codComuna=jb.load('codComuna.bin')
-  modeloBA=jb.load('modeloBA.bin')
+  modeloBA=jb.load('modeloArbol.bin')
   return codEdad,codHorario,codGenero,codDia,codComuna,modeloBA
 codEdad,codHorario,codGenero,codDia,codComuna,modeloBA = load_models()
 
