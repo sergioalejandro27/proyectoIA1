@@ -96,7 +96,7 @@ st.subheader("Vista Previa de los Datos")
 st.dataframe(df.head(5))  # Mostrar las primeras 5 filas del dataframe
 
       
-edades=['Niño','Adolecente','Adulto']
+edades=['ADOLECENCIA','ADULTEZ','INFANCIA']
 horas=['MADRUGADA','MAÑANA','NOCHE','TARDE']
 comunas=['CABECERA DEL LLANO','CENTRO', 'GARCIA ROVIRA', 'LA CIUDADELA',
  'LA CONCORDIA', 'LA PEDREGOSA', 'LAGOS DEL CACIQUE', 'MORRORICO', 'MUTIS',
