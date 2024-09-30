@@ -39,14 +39,14 @@ df= load_data()
 
 @st.cache_resource
 def load_models():
-  codEdad=jb.load('codEdad.bin')
-  codHorario=jb.load('codHorario.bin')
-  codGenero=jb.load('codGenero.bin')
-  codDia=jb.load('codDia.bin')
-  codComuna=jb.load('codComuna.bin')
+  numedad=jb.load('numedad.bin')
+  numhora=jb.load('numhora.bin')
+  numsexo=jb.load('numsexo.bin')
+  numdia=jb.load('numdia.bin')
+  numcom=jb.load('numcom.bin')
   modeloBA=jb.load('modeloArbol.bin')
-  return codEdad,codHorario,codGenero,codDia,codComuna,modeloBA
-codEdad,codHorario,codGenero,codDia,codComuna,modeloBA = load_models()
+  return numedad,numhora,numsexo,numdia,numcom,modeloBA
+codEdad,numhora,codGenero,codDia,codComuna,modeloBA = load_models()
 
 #Primer contenedor
 with st.container():
@@ -160,7 +160,7 @@ with st.container():
            """)
            
   edadn=list(codEdad.transform([edad]))[0]
-  horan=list(codHorario.transform([hora]))[0]
+  horan=list(numhora.transform([hora]))[0]
   dian=list(codDia.transform([dia]))[0]
   comunan=list(codComuna.transform([comuna]))[0]
   generon=list(codGenero.transform([genero]))[0]
