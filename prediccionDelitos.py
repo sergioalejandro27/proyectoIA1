@@ -26,7 +26,7 @@ imagen_video = Image.open("delitos-federales.jpg")
 ## Iniciar barra lateral en la página web y título e ícono
 
 st.set_page_config(
-  page_title="ML Delitos Bucaramanga",
+  page_title="Proyecto Delitos Bucaramanga",
   page_icon="4321369.png",
   initial_sidebar_state='auto'
   )
