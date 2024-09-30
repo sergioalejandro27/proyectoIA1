@@ -33,7 +33,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-  df= pd.read_csv('Delito Bucaramanga_preprocesar.csv', delimiter=",") #Currently on my local machine
+  df= pd.read_csv('df.csv', delimiter=",") #Currently on my local machine
   return df
 df= load_data()
 
